@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>  
+    <section class="section is-flex is-justify-content-center is-align-items-center is-fullheight">
+        <div class="container box has-text-centered">
+            <h1 class="title">Currency Converter</h1>
+            <div class="field has-addons is-grouped is-grouped-centered">
+                <div class="control">
+                    <input class="input" type="number" id="amount" placeholder="Сумма">
+                </div>
+                <div class="customControls field has-addons is-grouped is-grouped-centered">
+                    <div class="control">
+                        <div class="select">
+                            <select id="from">
+                                <option value="USD">USD</option>
+                                <option value="EUR">EUR</option>
+                                <option value="RUB">RUB</option>
+                                <option value="CNY">CNY</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <div class="select">
+                            <select id="to">
+                                <option value="USD">USD</option>
+                                <option value="EUR">EUR</option>
+                                <option value="RUB">RUB</option>
+                                <option value="CNY">CNY</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="button is-primary mt-4 convertBtn">Конвертировать</button>
+            <div class="convertResult mt-4">
+                <p class="result"></p>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
